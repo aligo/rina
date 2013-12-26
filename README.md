@@ -17,6 +17,7 @@ But here is Rina, A smaller and more flexible implementation.
 
 ----
 
+Basically useage is exactly the same as AMD:
 ```javascript
 define(['jquery'] , function ($) {
     return function () {};
@@ -28,8 +29,13 @@ require(['myModuleWithSomeLongLongNamespace', 'underscore'], function (myModule,
     return function () {};
 });
 ```
-Basically useage is exactly the same as AMD.
 
+Cause of it's not asynchronous, you may want to do that AMD can't:
+```javascript
+myModule = require('myModuleWithSomeLongLongNamespace');
+```
+
+And more examples in: https://github.com/aligo/rina/blob/master/test/test.coffee
 
 ----
 #### Author
