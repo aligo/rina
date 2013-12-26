@@ -1,0 +1,11 @@
+{
+  "name": "rina",
+  "version": "0.0.1",
+  "main": "build/rina.js",
+  "ignore": [
+    ".tmp",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
