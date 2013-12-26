@@ -24,8 +24,12 @@ http://opensource.org/licenses/mit-license.php
   rina = {
     define: function(name, deps, module_fn) {
       if (typeof deps === 'function') {
-        module_fn = deps;
-        deps = [];
+        if (typeof name === 'array') {
+          rina.require(name, deps);
+        } else {
+          module_fn = deps;
+          deps = [];
+        }
       } else if (typeof deps === 'string') {
         deps = [deps];
       }

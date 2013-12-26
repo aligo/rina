@@ -32,6 +32,11 @@ test 'Should can requires module then directly asssert', ->
   deepEqual require('testModule2', 'testModule1', 'testModule3'), ['module2', 'module1', 'module3'], 'multiple modules 3 ok'
 
 module 'define'
+test 'Should can use as require', ->
+  require ['testModule2', 'testModule1'], (m2, m1) ->
+    equal m1, 'module1', 'testModule1 ok'
+    equal m2, 'module2', 'testModule2 ok'
+
 test 'Should throw when duplicate definition', ->
   throws (->
     define 'testModule1', ->

@@ -44,6 +44,8 @@ And more examples in: https://github.com/aligo/rina/blob/master/test/test.coffee
 
 [Development Version (~2kb)](https://raw.github.com/aligo/rina/master/build/rina.js)
 
+### Version
+0.0.1
 
 ----
 #### Author

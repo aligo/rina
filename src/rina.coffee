@@ -16,8 +16,11 @@ original_require = window.require
 rina = 
   define: (name, deps, module_fn) ->
     if typeof deps is 'function'
-      module_fn = deps
-      deps = []
+      if typeof name is 'array'
+        rina.require name, deps
+      else
+        module_fn = deps
+        deps = []
     else if typeof deps is 'string'
       deps = [deps]
 
