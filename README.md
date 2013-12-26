@@ -17,7 +17,7 @@ But here is Rina, A smaller and more flexible implementation.
 
 ----
 
-Basically, usage is exactly the same as AMD:
+Basically useage is exactly the same as AMD:
 ```javascript
 define(['jquery'] , function ($) {
     return function () {};
@@ -36,6 +36,14 @@ myModule = require('myModuleWithSomeLongLongNamespace');
 ```
 
 And more examples in: https://github.com/aligo/rina/blob/master/test/test.coffee
+
+----
+
+### Downloads
+[Production Version (~1kb)](https://raw.github.com/aligo/rina/master/build/rina.min.js)
+
+[Development Version (~2kb)](https://raw.github.com/aligo/rina/master/build/rina.js)
+
 
 ----
 #### Author
