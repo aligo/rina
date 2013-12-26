@@ -17,7 +17,7 @@ But here is Rina, A smaller and more flexible implementation.
 
 ----
 
-Basically usage is exactly the same as AMD:
+Basically, usage is exactly the same as AMD:
 ```javascript
 define(['jquery'] , function ($) {
     return function () {};
