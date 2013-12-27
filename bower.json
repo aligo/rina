@@ -1,11 +1,20 @@
 {
   "name": "rina",
-  "version": "0.0.1",
+  "description": "Rina Is Not AMD (Asynchronous Module Definition).",
+  "version": "0.0.2",
+  "author": {
+    "name": "aligo Kang",
+    "email": "aligo_x@163.com"
+  },
   "main": "build/rina.js",
   "ignore": [
     ".tmp",
     "node_modules",
     "bower_components",
     "test"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "qunit": "~1.12.0"
+  }
 }

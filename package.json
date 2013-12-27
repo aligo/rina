@@ -1,10 +1,17 @@
 {
   "name": "rina",
-  "version": "0.0.1",
-  "dependencies": {},
-  "devDependencies": {
-    "qunitjs": "~1.12.0"
+  "description": "Rina Is Not AMD (Asynchronous Module Definition).",
+  "version": "0.0.2",
+  "author": {
+    "name": "aligo Kang",
+    "email": "aligo_x@163.com"
   },
+  "repository": { 
+    "type": "git",
+    "url": "git@github.com:aligo/rina.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">=0.8.0"
   }

@@ -1,5 +1,5 @@
 ###
-Rina 0.0.1
+Rina 0.0.2
 Copyright (c) 2013-2014 aligo Kang
 
 Released under the MIT license
