@@ -77,3 +77,13 @@ test 'Should can delay resolves undefined deps when definition 2', ->
 
   equal require('testModule8'), 'module9module10', 'ok'
   equal require('testModule11'), 'module9module10', 'ok'
+
+test 'Should support dependency injection', ->
+  require (testModule1, testModule2) ->
+    equal testModule1, 'module1', 'testModule1 ok'
+    equal testModule2, 'module2', 'testModule2 ok'
+
+  define 'testModule12', (testModule1, testModule2) ->
+    testModule1 + testModule2 + 'module12'
+
+  equal require('testModule12'), 'module1module2module12', 'ok'

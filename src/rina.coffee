@@ -1,5 +1,5 @@
 ###
-Rina 0.0.2
+Rina 0.0.3
 Copyright (c) 2013-2014 aligo Kang
 
 Released under the MIT license
@@ -19,7 +19,11 @@ rina =
         rina.require name, deps
       else
         module_fn = deps
-        deps = []
+        fn_args = module_fn.toString().match(/^function\s*[^\(]*\(\s*([^\)]*)\)/m)[1]
+        deps = if fn_args == ''
+          []
+        else
+          fn_args.replace(/\s/g, '').split(',')
     else if typeof deps is 'string'
       deps = [deps]
 
@@ -31,6 +35,9 @@ rina =
   require: ->
     if arguments.length > 2
       deps = arguments
+    else if typeof arguments[0] is 'function'
+      fn = arguments[0]
+      deps = fn.toString().match(/^function\s*[^\(]*\(\s*([^\)]*)\)/m)[1].replace(/\s/g, '').split(',')
     else
       deps = arguments[0]
       fn = arguments[1]
